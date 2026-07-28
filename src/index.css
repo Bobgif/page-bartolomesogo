@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "leaflet/dist/leaflet.css";
+
+/* ... aquí abajo siguen tus colores personalizados o estilos que ya tenías ... */
+
+@theme {
+  /* Aquí definimos tu paleta de colores de élite */
+  --color-barto-dark: #1A332D;
+  --color-barto-gold: #D4AF37;
+  --color-barto-bg: #FFFFFF;
+  --color-barto-surface: #F8FAFC;
+  --color-barto-border: #E2E8F0;
+
+  /* Fuentes recomendadas para tu estilo de galería */
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+ 
+}
+/* Ocultar barra de scroll en componentes deslizables */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

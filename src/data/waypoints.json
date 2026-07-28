@@ -1,0 +1,19 @@
+
+[
+  {
+    "id": "exp-sira-01",
+    "title": "Expedición Cordillera del Sira",
+    "description": "Registro de avifauna endémica y herpetos en bosque de neblina.",
+    "coordinates": [-9.4167, -74.7333],
+    "category": "expedicion",
+    "slug": "expedicion-sira"
+  },
+  {
+    "id": "obs-pucallpa-01",
+    "title": "Monitoreo en Pucallpa",
+    "description": "Observación de especies adaptadas al entorno urbano y periurbano de Ucayali.",
+    "coordinates": [-8.3791, -74.5539],
+    "category": "aves",
+    "slug": "monitoreo-pucallpa"
+  }
+]
