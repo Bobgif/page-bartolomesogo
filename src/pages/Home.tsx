@@ -1,6 +1,6 @@
 import React from 'react';
 import { PromoBanner } from '../components/PromoBanner';
-import { Allies } from '../components/allies';
+import { Allies } from '../components/Allies';
 import { HomeMap } from '../components/maps/HomeMap';
 
 export const Home: React.FC = () => {
