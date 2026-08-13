@@ -5,7 +5,7 @@ interface Photo {
   alt: string;
 }
 
-interface PhotoSliderProps {
+interface PhotoSliderProps { 
   photos: Photo[];
 }
 

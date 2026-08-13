@@ -1,3 +1,4 @@
+//BlogPost.tsx
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
@@ -99,7 +100,7 @@ export const BlogPost: React.FC = () => {
         <img 
           src={attributes.imageUrl} 
           alt={attributes.title} 
-          className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+          className="w-full h-full object-cover  hover:grayscale-0 transition-all duration-700" 
         />
       </div>
 

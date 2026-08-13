@@ -1,3 +1,4 @@
+//Home.tsx
 import React from 'react';
 import { PromoBanner } from '../components/PromoBanner';
 import { Allies } from '../components/Allies';
@@ -18,7 +19,7 @@ export const Home: React.FC = () => {
           Documentando la <span className="text-barto-gold">Amazonía</span>
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-4 leading-relaxed font-light">
-          Fotografía de fauna silvestre, monitoreo de herpetos y soporte visual para investigación científica en la selva del Perú.
+          Fotografía de fauna silvestre, monitoreo de mamíferos mayores, aves, anfibios y reptiles. Soporte visual para investigación científica en la costa, sierra y selva del Perú.
         </p>
         <div className="flex justify-center gap-4">
           <button 

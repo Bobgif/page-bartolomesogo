@@ -1,10 +1,13 @@
 {
   "name": "page-bartolomesogo",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.1.0",
+  "blogVersion": "1.1.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/generateWaypoints.js",
     "dev": "vite",
+    "prebuild": "node scripts/generate-sitemap.js && node scripts/generateWaypoints.js",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"

@@ -12,7 +12,7 @@ export const Allies: React.FC = () => {
         <div className="mb-10">
          
           <h3 className="text-xl md:text-2xl font-extrabold tracking-tight text-barto-dark mb-2">
-            Aliados Estratégicos en Conservación y Campo
+            Aliados Estratégicos
           </h3>
         </div>
 

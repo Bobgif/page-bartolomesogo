@@ -1,26 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react'; // 1. IMPORTAMOS useState
 import { Outlet } from 'react-router-dom';
 import { BlogNavbar } from '../components/BlogNavbar';
-import { Footer } from '../../components/Footer'; // Reutilizamos tu footer global
+//import { BlogFooter } from '../components/BlogFooter';
+//import { BlockCallToAction} from '../components/BlogCallToAction';
 
 export const BlogLayout: React.FC = () => {
+  // 2. LA MEMORIA CENTRAL: Vive aquí para compartirse con toda la sección Blog
+  const [categoriaActiva, setCategoriaActiva] = useState<string>('Todas');
+
   return (
     <div className="min-h-screen bg-barto-surface text-barto-dark font-sans selection:bg-barto-gold selection:text-white">
       
-      <BlogNavbar />
+      {/* 3. CONECTAMOS EL NAVBAR: Le pasamos los mandos de la nave */}
+      <BlogNavbar 
+        categoriaActiva={categoriaActiva} 
+        setCategoriaActiva={setCategoriaActiva} 
+      />
 
       {/* Grid de 12 columnas: 8 para el post, 4 para el sidebar */}
       <main className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
         
-        {/* ZONA PRINCIPAL DE LECTURA (Aquí cargan las páginas del blog) */}
+        {/* ZONA PRINCIPAL DE LECTURA */}
         <div className="lg:col-span-8">
-          <Outlet /> 
+          {/* 4. EL PUENTE MAGICO: Le pasamos la categoría a la página que cargue aquí dentro */}
+          <Outlet context={{ categoriaActiva }} /> 
         </div>
 
         {/* BARRA LATERAL DERECHA (Sidebar) */}
         <aside className="lg:col-span-4 space-y-8">
           
-          {/* Módulo de Donaciones / Patrocinio */}
+          {/* //Módulo de Donaciones / Patrocinio *
           <div className="bg-barto-bg p-8 rounded-xl border border-barto-border shadow-xs text-center">
             <span className="font-mono text-[10px] uppercase tracking-widest text-barto-gold font-bold mb-2 block">
               Ciencia Ciudadana
@@ -29,10 +38,16 @@ export const BlogLayout: React.FC = () => {
             <p className="text-sm text-gray-600 mb-6 leading-relaxed">
               Tu aporte financia equipos fotográficos y logística para seguir documentando la biodiversidad del Sira y la Amazonía.
             </p>
-            <button className="w-full bg-barto-dark text-white py-3 rounded-lg font-medium hover:bg-barto-gold transition-colors shadow-sm">
+            // 5. BOTÓN FUNCIONAL: Ahora es una etiqueta <a> con tus mismos estilos *
+            <a 
+              href="https://ko-fi.com/bartolomesogo" // REEMPLAZA CON TU LINK DE DONACIÓN
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full block bg-barto-dark text-white py-3 rounded-lg font-medium hover:bg-barto-gold transition-colors shadow-sm"
+            >
               Donar / Patrocinar
-            </button>
-          </div>
+            </a>
+          </div>/}
 
           {/* Módulo Futuro: Carrito de Compras / Tienda */}
           <div className="bg-barto-bg p-8 rounded-xl border border-barto-border shadow-xs">
@@ -43,8 +58,8 @@ export const BlogLayout: React.FC = () => {
         </aside>
 
       </main>
-
-      <Footer />
+      {/* <BlockCallToAction /> */}
+      {/* <BlogFooter /> */}
     </div>
   );
 };

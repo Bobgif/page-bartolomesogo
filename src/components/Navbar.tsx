@@ -24,10 +24,10 @@ export const Navbar: React.FC = () => {
         {/* Enlaces de Navegación Limpios (Ocultos en móvil: hidden md:flex) */}
         <nav className="hidden md:flex justify-center gap-6 text-xs font-mono uppercase tracking-wider text-gray-800 font-medium">
           <Link to="/" className="hover:text-amber-600 transition-colors">Inicio</Link>
-          <Link to="/underconstruction" className="hover:text-amber-600 transition-colors">Fotografías</Link>
+          <Link to="/fotografias" className="hover:text-amber-600 transition-colors">Fotografías</Link>
           <Link to="/acerca" className="hover:text-amber-600 transition-colors">Acerca de mi</Link>
           <Link to="/contacto" className="hover:text-amber-600 transition-colors">Contacto</Link>
-          <Link to="/underconstruction" className="hover:text-amber-600 transition-colors">Blog de exploraciones</Link>
+          <Link to="/blog" className="hover:text-amber-600 transition-colors">Blog de exploraciones</Link>
         </nav>
 
         {/* Iconos de Redes Sociales (Ocultos en móvil) */}
@@ -83,7 +83,7 @@ export const Navbar: React.FC = () => {
           <Link to="/acerca" onClick={closeMenu} className="hover:text-amber-600 transition-colors w-full text-center">Acerca de</Link>
           <Link to="/contacto" onClick={closeMenu} className="hover:text-amber-600 transition-colors w-full text-center">Contacto</Link>
           <Link to="/blog" onClick={closeMenu} className="hover:text-amber-600 transition-colors w-full text-center">Diario de Expediciones</Link>
-          
+
           {/* Redes sociales en móvil */}
           <div className="flex space-x-6 pt-4 border-t border-gray-100 w-1/2 justify-center">
             <a href="https://www.instagram.com/bartosogo/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors">

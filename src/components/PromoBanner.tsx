@@ -29,7 +29,7 @@ export const PromoBanner: React.FC = () => {
         <img 
           src={attributes.imageUrl} 
           alt={attributes.altText} 
-          className="w-full h-full object-cover grayscale opacity-50 md:opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+          className="w-full h-full object-cover  opacity-50 md:opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
         />
         {/* Tu gradiente original: Lo ocultamos en celular (hidden) pero lo mostramos en PC (md:block) */}
         <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#0B1311] via-transparent to-transparent"></div>

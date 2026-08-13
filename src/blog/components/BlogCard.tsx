@@ -8,7 +8,7 @@ interface BlogCardProps {
   date: string;
   readTime: string;
   imageUrl: string;
-  slug: string; // La URL limpia, ej: "expedicion-sira"
+  slug: string;
 }
 
 export const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, category, date, readTime, imageUrl, slug }) => {
@@ -20,9 +20,10 @@ export const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, category, da
         <img 
           src={imageUrl} 
           alt={title} 
-          className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100" 
+          loading="lazy" /* <--- CRÍTICO: Carga perezosa para zonas de baja cobertura */
+          className="w-full h-full object-cover  hover:grayscale-0 transition-all duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100" 
         />
-        {/* Etiqueta de Categoría (Ej: Herpetos, Aves) */}
+        {/* Etiqueta de Categoría */}
         <div className="absolute top-4 left-4 bg-barto-dark text-barto-gold text-[10px] font-mono px-3 py-1 uppercase tracking-widest rounded-sm shadow-sm">
           {category}
         </div>
@@ -31,7 +32,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, category, da
       {/* Contenido de Texto */}
       <div className="p-6 flex flex-col flex-grow">
         
-        {/* Metadatos (Fecha y Tiempo de lectura) */}
+        {/* Metadatos (Fecha y Tiempo de lectura jalados por el script) */}
         <div className="flex items-center text-[10px] font-mono text-gray-500 mb-3 space-x-4 uppercase tracking-wider">
           <span>{date}</span>
           <span>&bull;</span>
@@ -56,7 +57,6 @@ export const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, category, da
         </Link>
 
       </div>
-
     </article>
   );
 };

@@ -7,7 +7,7 @@ email: "contacto@bartolomesogo.com"
 
 Soy un documentalista visual y explorador radicado en Pucallpa, Perú, especializado en la Amazonía.
 
-Mi trabajo no se limita a obturar una cámara; actúo como el puente entre el trabajo riguroso de campo y la decodificación científica. Colaboro estrechamente con investigadores, instituciones como el **SERNANP** y organizaciones como **ASSOVE**, aportando registros precisos de aves.
+Mi trabajo no se limita a obturar una cámara; actúo como el puente entre el trabajo riguroso de campo y la decodificación científica. Colaboro estrechamente con investigadores, instituciones como el **SERNANP** y organizaciones como **ASSOVE** y **AIECO** aportando registros precisos de aves.
 
 ### Lo que hago
 * **Documentación de Expediciones:** Registro visual de alto impacto bajo condiciones extremas.

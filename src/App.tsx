@@ -8,7 +8,7 @@ import { Photos } from './pages/Photos';
 import { AboutContact } from './pages/AboutContact';
 import { NotFound } from './pages/NotFound';
 import { UnderConstruction } from './pages/UnderConstruction';
-
+import { Services } from './pages/Services';
 /* Componentes del blog */
 import { BlogLayout } from './blog/layout/BlogLayout';
 import { BlogHome } from './blog/pages/BlogHome';
@@ -26,6 +26,7 @@ export function App() {
           <Route path="/fotografias" element={<Photos />} />
           <Route path="/acerca" element={<AboutContact />} />
           <Route path="/contacto" element={<AboutContact />} />
+          <Route path="/servicios" element={<Services />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/underconstruction" element={<UnderConstruction />} />
       

@@ -1,19 +1,35 @@
-
 [
   {
-    "id": "exp-sira-01",
-    "title": "Expedición Cordillera del Sira",
-    "description": "Registro de avifauna endémica y herpetos en bosque de neblina.",
-    "coordinates": [-9.4167, -74.7333],
-    "category": "expedicion",
-    "slug": "expedicion-sira"
+    "slug": "expedicion-sira",
+    "title": "Hatum Rumi: Cordillera del Sira",
+    "category": "exploracion",
+    "date": "11 Oct 2024",
+    "readTime": "8 min lectura",
+    "excerpt": "Exploración en medio de la selva amazónica",
+    "lat": -9.4167,
+    "lng": -74.7333,
+    "imageUrl": "https://pub-21f4cdb8c7c84cca84d4747d00efce83.r2.dev/thumbnails/map-dise%C3%B1o-otorongo.webp"
   },
   {
-    "id": "obs-pucallpa-01",
-    "title": "Monitoreo en Pucallpa",
-    "description": "Observación de especies adaptadas al entorno urbano y periurbano de Ucayali.",
-    "coordinates": [-8.3791, -74.5539],
-    "category": "aves",
-    "slug": "monitoreo-pucallpa"
+    "slug": "october-big-day-2024",
+    "title": "October Big Day 2024 en la Reserva Comunal El Sira",
+    "category": "Exploracion",
+    "date": "11 Oct 2024",
+    "readTime": "4 min de lectura",
+    "excerpt": "Exploración en medio de la selva amazónica",
+    "lat": -9.4167,
+    "lng": -74.7333,
+    "imageUrl": "https://pub-21f4cdb8c7c84cca84d4747d00efce83.r2.dev/thumbnails/map-dise%C3%B1o-otorongo.webp"
+  },
+  {
+    "slug": "sira",
+    "title": "Sin título",
+    "category": "General",
+    "date": "Fecha por definir",
+    "readTime": "1 min de lectura",
+    "excerpt": "",
+    "lat": null,
+    "lng": null,
+    "imageUrl": null
   }
 ]
